@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:foodie/core/color_constants.dart';
-import 'package:foodie/core/textstyle_constants.dart';
+import 'package:foodie/core/constants/color_constants.dart';
+import 'package:foodie/core/constants/dimension_constants.dart';
+import 'package:foodie/core/constants/textstyle_constants.dart';
+import 'package:foodie/core/extensions/extensions.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -21,13 +23,13 @@ class LoginScreen extends StatelessWidget {
           Column(
             children: <Widget>[
               Container(
-                height: MediaQuery.of(context).size.height * .58,
+                height: Dimens.d058.percentHeight(context),
                 decoration: BoxDecoration(
                   color: ColorConstants.cEC2578,
                   borderRadius: BorderRadius.vertical(
                     bottom: Radius.elliptical(
-                      MediaQuery.of(context).size.width,
-                      60,
+                      Dimens.d100.percentWidth(context),
+                      Dimens.d60,
                     ),
                   ),
                 ),
@@ -43,22 +45,22 @@ class LoginScreen extends StatelessWidget {
           // set the `alignment` of container to Alignment.bottomCenter
           Container(
             alignment: Alignment.topCenter,
-            padding: const EdgeInsets.only(
-              top: 280, //MediaQuery.of(context).size.height * .58,
-              right: 20,
-              left: 20,
+            padding: EdgeInsets.only(
+              top: Dimens.d280, //MediaQuery.of(context).size.height * .58,
+              right: Dimens.d20,
+              left: Dimens.d20,
             ),
             child: Container(
-              height: 325,
-              width: 300,
+              height: Dimens.d325,
+              width: Dimens.d300,
               decoration: BoxDecoration(
                 color: Colors.cyan,
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(Dimens.d20),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  vertical: 30,
-                  horizontal: 16,
+                padding: EdgeInsets.symmetric(
+                  vertical: Dimens.d30,
+                  horizontal: Dimens.d16,
                 ),
                 child: Column(
                   children: <Widget>[

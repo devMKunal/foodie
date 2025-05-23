@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodie/core/color_constants.dart';
+import 'package:foodie/core/constants/color_constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextstyleConstants {
