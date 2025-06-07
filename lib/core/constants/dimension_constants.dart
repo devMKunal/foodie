@@ -1,3 +1,5 @@
+import 'package:flutter/widgets.dart';
+
 class Dimens {
   const Dimens._();
 
@@ -2004,4 +2006,26 @@ class Dimens {
   static double d999 = 999;
   static int i1000 = 1000;
   static double d1000 = 1000;
+
+  static SizedBox get h8 => SizedBox(
+        height: Dimens.d8,
+      );
+  static SizedBox get w8 => SizedBox(
+        width: Dimens.d8,
+      );
+  static SizedBox get h16 => SizedBox(
+        height: Dimens.d16,
+      );
+  static SizedBox get w16 => SizedBox(
+        width: Dimens.d16,
+      );
+  static SizedBox get h20 => SizedBox(
+        height: Dimens.d20,
+      );
+  static SizedBox get w20 => SizedBox(
+        width: Dimens.d20,
+      );
+  static SizedBox get h100 => SizedBox(
+        height: Dimens.d100,
+      );
 }

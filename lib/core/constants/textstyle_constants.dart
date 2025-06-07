@@ -34,4 +34,10 @@ class TextstyleConstants {
     fontWeight: FontWeight.w700,
     color: ColorConstants.cEC2578,
   );
+
+  static TextStyle s20w500cEC2578 = GoogleFonts.openSans(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: ColorConstants.cEC2578,
+  );
 }
